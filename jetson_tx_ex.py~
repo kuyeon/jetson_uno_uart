@@ -24,9 +24,9 @@ def readSerial():
 
 while True:
     try:
-        serial.write('0'.encode())      # Send data to the UNO
+        serial.write('0'.encode())
 
-        data = readSerial()     # Receive data from the UNO
+        data = readSerial()
         print(data)
         time.sleep(1)
 
