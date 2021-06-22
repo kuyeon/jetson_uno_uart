@@ -1,6 +1,8 @@
-/* Author: Park Kuyeon
- * Title: Jetson - Arduino UNO UART Program
- * Description: This is the code about the UNO recieving data from the Jetson
+/* 
+ *  Date: 2021-06-22
+ *  Author: Park Kuyeon
+ *  Title: Jetson - Arduino UNO UART Program
+ *  Description: This is the code about the UNO recieving data from the Jetson
  *              and controls the LED attatched on the UNO and sends LED status to the Jetson.
  *              
  * 
