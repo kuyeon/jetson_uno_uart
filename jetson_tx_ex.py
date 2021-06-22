@@ -14,15 +14,31 @@ serial = serial.Serial(
 # Wait a second to let the port initialize
 time.sleep(1)
 
-try:
-    while True:
+
+def readSerial():
+    string = " "
+    if serial.readable():
+        string = serial.readline().decode()
+    return string
+
+
+while True:
+    try:
         serial.write('0'.encode())
+
+        data = readSerial()
+        print(data)
         time.sleep(1)
+
         serial.write('1'.encode())
+
+        data = readSerial()
+        print(data)
         time.sleep(1)
 
-except Exception as e:
-    print(e)
 
-finally:
-    pass
+    except Exception as e:
+        print(e)
+
+    finally:
+        pass
